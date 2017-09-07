@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 定时任务
+ * 批量定时任务
  * @author zou
  *
  */
