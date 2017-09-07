@@ -5,7 +5,11 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
+/**
+ * 简单HTTP请求
+ * @author zou
+ *
+ */
 public class HttpRequestUtil {
 	 /**
      * 向指定URL发送GET方法的请求
@@ -67,7 +71,7 @@ public class HttpRequestUtil {
      * @param url
      *            发送请求的 URL
      * @param param
-     *            请求参数，请求参数应该是 name1=value1&name2=value2 的形式。
+     *            请求参数。
      * @return 所代表远程资源的响应结果
      */
     public static String sendPost(String url, String param) {
