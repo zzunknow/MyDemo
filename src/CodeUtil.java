@@ -5,13 +5,17 @@ import java.security.MessageDigest;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
-
+/**
+ * 加密工具
+ * @author zou
+ *
+ */
 public class CodeUtil {
 	
 	/**
 	 * BASE64加密
-	 * @param str
-	 * @return
+	 * @param str 字符串
+	 * @return 字符串
 	 */
     public static String Base64EncoderFromString(String str) {  
         byte[] b = null;  
@@ -24,8 +28,8 @@ public class CodeUtil {
     }  
     /**
      * BASE64加密
-     * @param b
-     * @return
+     * @param b 字节码
+     * @return 字符串
      */
     public static String Base64EncoderFromByte(byte[] b){
     	 if (b != null) {  
@@ -36,8 +40,8 @@ public class CodeUtil {
   
     /**
      * BASE64解密  
-     * @param s
-     * @return
+     * @param s 字符串
+     * @return 字符串
      */
     public static String Base64DecoderToString(String s) {  
         byte[] b = null;  
@@ -54,8 +58,8 @@ public class CodeUtil {
     }  
     /**
      * BASE64解密  
-     * @param s
-     * @return
+     * @param s 字符串
+     * @return 字节码
      */
 	public static byte[] Base64DecoderToByte(String s){
 		byte[] b = null;
@@ -69,15 +73,15 @@ public class CodeUtil {
 		return b;
 	}
 	/**
-	 * 转为MD5
-	 * @param str
-	 * @return
+	 * 计算字符串MD5
+	 * @param str 
+	 * @return 
 	 */
 	public static String MD5Encoder(String str){
 		return encode(str,Code.Md5);
 	}
 	/**
-	 * 转为SHA1
+	 * 计算字符串SHA1
 	 * @param str
 	 * @return
 	 */
@@ -85,7 +89,7 @@ public class CodeUtil {
 		return encode(str,Code.SHA1);
 	}
 	/**
-	 * 转为SHA256
+	 * 计算字符串SHA256
 	 * @param str
 	 * @return
 	 */
