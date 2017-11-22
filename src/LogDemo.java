@@ -4,9 +4,10 @@ import org.slf4j.LoggerFactory;
 /**
  * logback使用demo
  * 使用包
- * org.slf4j	--->		slf4j-api-1.7.9.jar
- * ch.qos.logback.core -->	logback-core-1.2.3.jar
- * ch.qos.logback.classic->	logback-classic-1.2.3.jar
+ * org.slf4j	--->		slf4j-api-1.7.9.jar	//日志接口
+ * ch.qos.logback.core -->	logback-core-1.2.3.jar	//logback核心
+ * ch.qos.logback.classic->	logback-classic-1.2.3.jar	//slf4j的实现类
+ * 配置文件	logback.xml（默认先在class下查找logback-test.xml,找不到再找logback.xml）
  * @author zou
  *
  */
