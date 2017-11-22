@@ -29,6 +29,10 @@ public class TimerDemo {
 		/*for(int i=90000;i<100000;i++){
 			tasks.get(i).cancel(true);
 		}*/
+		
+		Thread.sleep(2000);
+		tasks.get(1).cancel(true);//取消其中一个任务
+		System.out.println(tasks.get(1));
 	}
 }
 
