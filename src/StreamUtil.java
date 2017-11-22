@@ -37,7 +37,7 @@ public class StreamUtil {
 	}
 	
 	/**
-	 * 输出String到文件
+	 * 输出String到文件,会覆盖原文件
 	 * @param val
 	 * @param path
 	 */
@@ -49,7 +49,7 @@ public class StreamUtil {
 	}
 	
 	/**
-	 * 输出byte到文件
+	 * 输出byte到文件,会覆盖原文件
 	 * @param b
 	 * @param path
 	 */
